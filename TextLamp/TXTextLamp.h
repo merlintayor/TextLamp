@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum
+{
+    speedFast = 0,
+    speedSlow,
+    speedDefault,
+}Speed;
+
 @interface TXTextLamp : UIView
 
 /**
@@ -25,5 +32,10 @@
  */
 @property(nonatomic,strong)UIFont   *font;
 
--(instancetype)initWithFrame:(CGRect)frame text:(NSString *)text textColor:(UIColor *)color font:(UIFont *)font;
+/**
+ 速度
+ */
+@property(nonatomic,assign)Speed     speed;
+
+-(instancetype)initWithFrame:(CGRect)frame text:(NSString *)text textColor:(UIColor *)color font:(UIFont *)font speed:(Speed)speed;
 @end

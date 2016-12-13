@@ -26,7 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    TXTextLamp *lamp = [[TXTextLamp alloc]initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 30) text:@"a text lamp demo " textColor:[UIColor redColor] font:[UIFont systemFontOfSize:20]];
+    TXTextLamp *lamp = [[TXTextLamp alloc]initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 30) text:@"a text lamp demo " textColor:[UIColor redColor] font:[UIFont systemFontOfSize:20] speed:speedDefault];
     [self.view addSubview:lamp];
     
     

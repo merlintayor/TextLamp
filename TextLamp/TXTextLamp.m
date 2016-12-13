@@ -29,7 +29,7 @@
 
 @implementation TXTextLamp
 
--(instancetype)initWithFrame:(CGRect)frame text:(NSString *)text textColor:(UIColor *)color font:(UIFont *)font
+-(instancetype)initWithFrame:(CGRect)frame text:(NSString *)text textColor:(UIColor *)color font:(UIFont *)font speed:(Speed)speed
 {
     self = [super initWithFrame:frame];
     if (self) {
@@ -38,6 +38,7 @@
         _color = color;
         _font = font ;
         _size = [text sizeWithAttributes:[NSDictionary dictionaryWithObjectsAndKeys:font,NSFontAttributeName, nil]];
+        _speed = speed;
         //如果给定宽高大于size时，size=给定宽高
         if (_size.width < frame.size.width) {
             _size.width = frame.size.width;
@@ -45,6 +46,7 @@
         if (_size.height < frame.size.height) {
             _size.height = frame.size.height;
         }
+        
         
         [self addSubview:self.imageView];
         [self addSubview:self.view];
@@ -60,7 +62,27 @@
     CGRect rect2 = _label2.frame;
     CGRect rect3 = _viewGap.frame ;
     
-    [UIView animateWithDuration:4 delay:0 options:UIViewAnimationOptionCurveLinear | UIViewAnimationOptionRepeat animations:^{
+    NSTimeInterval interval ;
+    switch (_speed) {
+        case speedDefault:
+        {
+            interval = 4;
+            break;
+        }
+        case speedFast:
+        {
+            interval = 2;
+            break;
+        }
+        case speedSlow:
+        {
+            interval = 8;
+            break;
+        }
+        default:
+            break;
+    }
+    [UIView animateWithDuration:interval delay:0 options:UIViewAnimationOptionCurveLinear | UIViewAnimationOptionRepeat animations:^{
         _label1.frame = CGRectMake(-_size.width-50, 0,_size.width,_size.height);
         _viewGap.frame = CGRectMake(-50, 0, 50, _size.height);
         _label2.frame = rect1;
