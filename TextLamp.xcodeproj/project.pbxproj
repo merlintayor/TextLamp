@@ -14,6 +14,7 @@
 		B4691EE61DFF8736001BDC81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4691EE51DFF8736001BDC81 /* Assets.xcassets */; };
 		B4691EE91DFF8736001BDC81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4691EE71DFF8736001BDC81 /* LaunchScreen.storyboard */; };
 		B4691EF21DFF8F08001BDC81 /* TXTextLamp.m in Sources */ = {isa = PBXBuildFile; fileRef = B4691EF11DFF8F08001BDC81 /* TXTextLamp.m */; };
+		B4691EF51DFFA7C1001BDC81 /* TXTextLamp1.m in Sources */ = {isa = PBXBuildFile; fileRef = B4691EF41DFFA7C1001BDC81 /* TXTextLamp1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		B4691EEA1DFF8736001BDC81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4691EF01DFF8F08001BDC81 /* TXTextLamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXTextLamp.h; sourceTree = "<group>"; };
 		B4691EF11DFF8F08001BDC81 /* TXTextLamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXTextLamp.m; sourceTree = "<group>"; };
+		B4691EF31DFFA7C1001BDC81 /* TXTextLamp1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXTextLamp1.h; sourceTree = "<group>"; };
+		B4691EF41DFFA7C1001BDC81 /* TXTextLamp1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXTextLamp1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				B4691EE01DFF8736001BDC81 /* ViewController.m */,
 				B4691EF01DFF8F08001BDC81 /* TXTextLamp.h */,
 				B4691EF11DFF8F08001BDC81 /* TXTextLamp.m */,
+				B4691EF31DFFA7C1001BDC81 /* TXTextLamp1.h */,
+				B4691EF41DFFA7C1001BDC81 /* TXTextLamp1.m */,
 				B4691EE21DFF8736001BDC81 /* Main.storyboard */,
 				B4691EE51DFF8736001BDC81 /* Assets.xcassets */,
 				B4691EE71DFF8736001BDC81 /* LaunchScreen.storyboard */,
@@ -155,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4691EF51DFFA7C1001BDC81 /* TXTextLamp1.m in Sources */,
 				B4691EE11DFF8736001BDC81 /* ViewController.m in Sources */,
 				B4691EDE1DFF8736001BDC81 /* AppDelegate.m in Sources */,
 				B4691EF21DFF8F08001BDC81 /* TXTextLamp.m in Sources */,
